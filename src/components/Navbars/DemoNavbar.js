@@ -15,6 +15,10 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
+
+
+// import { IconName } from "react-icons/fa";
+import { FaLinkedin } from 'react-icons/fa'
 import React from "react";
 import { Link } from "react-router-dom";
 // JavaScript plugin that hides or shows a component based on your scroll
@@ -176,37 +180,41 @@ class DemoNavbar extends React.Component {
                     </DropdownToggle>
                     <DropdownMenu>
                       <DropdownItem to="/landing-page" tag={Link}>
-                        Landing
+                        Portfolio
                       </DropdownItem>
                       <DropdownItem to="/profile-page" tag={Link}>
                         Profile
-                      </DropdownItem>
-                      <DropdownItem to="/login-page" tag={Link}>
-                        Login
-                      </DropdownItem>
-                      <DropdownItem to="/register-page" tag={Link}>
-                        Register
                       </DropdownItem>
                     </DropdownMenu>
                   </UncontrolledDropdown>
                 </Nav>
                 <Nav className="align-items-lg-center ml-lg-auto" navbar>
+
                   <NavItem>
+
                     <NavLink
                       className="nav-link-icon"
-                      href="https://m.facebook.com/ibrahim.alhamshari.3"
-                      id="tooltip333589074"
-                      target="_blank"
+                      href="https://www.linkedin.com/in/ibrahim-alhamshari-312532176/"
+                      // id="tooltip356693867"
+                    target="_blank"
                     >
-                      <i className="fa fa-facebook-square" />
-                      <span className="nav-link-inner--text d-lg-none ml-2">
-                        Facebook
+                      <FaLinkedin
+                        id="tooltip333589074"
+                        target="_blank"
+                      >
+                        <i className="fa fa-facebook-square" />
+                        <span className="nav-link-inner--text d-lg-none ml-2">
+                          LinkedIn
                       </span>
-                    </NavLink>
-                    <UncontrolledTooltip delay={0} target="tooltip333589074">
-                      Like us on Facebook
+                      </FaLinkedin>
+                      <UncontrolledTooltip delay={0} target="tooltip333589074">
+                        Like us on LinkedIn
                     </UncontrolledTooltip>
+                    </NavLink>
+
+
                   </NavItem>
+
                   <NavItem>
                     <NavLink
                       className="nav-link-icon"
@@ -255,21 +263,7 @@ class DemoNavbar extends React.Component {
                       Star us on Github
                     </UncontrolledTooltip>
                   </NavItem>
-                  <NavItem className="d-none d-lg-block ml-lg-4">
-                    <Button
-                      className="btn-neutral btn-icon"
-                      color="default"
-                      href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-navbar"
-                      target="_blank"
-                    >
-                      <span className="btn-inner--icon">
-                        <i className="fa fa-cloud-download mr-2" />
-                      </span>
-                      <span className="nav-link-inner--text ml-1">
-                        Download
-                      </span>
-                    </Button>
-                  </NavItem>
+
                 </Nav>
               </UncontrolledCollapse>
             </Container>
